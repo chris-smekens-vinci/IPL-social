@@ -4,6 +4,4 @@ export function passwordChecker(password) {
     const hasDigit = /\d/.test(password);
     const doesNotContainIPL = !/ipl/i.test(password);
     return hasMinLength && hasSpecialChar && hasDigit && doesNotContainIPL;
-}
-
-//module.exports = passwordChecker;
+};
