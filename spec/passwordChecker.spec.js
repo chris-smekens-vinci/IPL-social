@@ -22,4 +22,8 @@ describe('Password Checker', () => {
         expect(passwordChecker('Password1!ipl')).toBe(false);
         expect(passwordChecker('Password1!IpL')).toBe(false);
     });
+
+    it('should pass if the password contains a special character and a digit, and does not contain "IPL"', () => {
+        expect(passwordChecker('Password1!')).toBe(true);
+    });
 });
