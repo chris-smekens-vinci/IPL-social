@@ -9,7 +9,11 @@ describe('Password Checker', () => {
         expect(passwordChecker('Password1')).toBe(false);
     });
 
-    it('should pass if the password contains a special character', () => {
+    it('should fail if the password does not contain a digit', () => {
+        expect(passwordChecker('Password!')).toBe(false);
+    });
+
+    it('should pass if the password contains a special character and a digit', () => {
         expect(passwordChecker('Password1!')).toBe(true);
     });
 });
