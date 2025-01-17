@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "**Nom :** SMEKENS   **Prénom :** CHRIS   **Email Vinci :** chris.smekens@student.vinci.be",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jasmine"
   },
