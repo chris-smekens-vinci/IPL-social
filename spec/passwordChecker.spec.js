@@ -16,4 +16,10 @@ describe('Password Checker', () => {
     it('should pass if the password contains a special character and a digit', () => {
         expect(passwordChecker('Password1!')).toBe(true);
     });
+
+    it('should fail if the password contains the string "IPL" (case insensitive)', () => {
+        expect(passwordChecker('Password1!IPL')).toBe(false);
+        expect(passwordChecker('Password1!ipl')).toBe(false);
+        expect(passwordChecker('Password1!IpL')).toBe(false);
+    });
 });
