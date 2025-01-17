@@ -1,0 +1,15 @@
+{
+  "name": "ipl-social",
+  "version": "1.0.0",
+  "description": "**Nom :** SMEKENS   **Prénom :** CHRIS   **Email Vinci :** chris.smekens@student.vinci.be",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^4.6.0"
+  }
+}
