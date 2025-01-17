@@ -8,4 +8,8 @@ describe('Password Checker', () => {
     it('should fail if the password does not contain a special character', () => {
         expect(passwordChecker('Password1')).toBe(false);
     });
+
+    it('should pass if the password contains a special character', () => {
+        expect(passwordChecker('Password1!')).toBe(true);
+    });
 });
