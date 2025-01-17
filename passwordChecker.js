@@ -1,6 +1,5 @@
-function passwordChecker(password) {
-    // vide 
+export function passwordChecker(password) {
     return password.length >= 8;
 }
 
-module.exports = passwordChecker;
+//module.exports = passwordChecker;
